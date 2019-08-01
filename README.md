@@ -1,5 +1,5 @@
 # tau_cucumber
 
-Chapter 4.1
+## Chapter 4.1
 
-Base configuration
+* Base configuration
