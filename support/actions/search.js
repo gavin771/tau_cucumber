@@ -1,14 +1,10 @@
+import homePage from "../../pages/Home";
+
 /**
  * Search for a keyword
  *
- * @param {String} keyword keyword to search for
- * @param {object} inputField WebdriverIO input field element
- * @param {object} submitButton WebdriverIO submit button element
+ * @param {String} keyword keyword to seasrch for
  */
-export default (keyword, inputField, submitButton) => {
-  inputField.waitForDisplayed(5000);
-  inputField.click();
-  inputField.setValue(keyword);
-  submitButton.waitForDisplayed(5000);
-  submitButton.click();
+export default keyword => {
+  homePage.search(keyword);
 };
