@@ -14,4 +14,4 @@ Feature: Menu Navigation
       | menuOption | pageTitle           |
       | Women      | Women - My Store    |
       | Dresses    | Dresses - My Store  |
-      | T-Shirts   | T-Shirts - My Store |
+      | T-Shirts   | T-shirts - My Store |
