@@ -16,6 +16,5 @@ Then(/^(no )?products are listed$/, notListed => {
 });
 
 Then(/^search results show products related to "(.*)"$/, keyword => {
-  checkProducts(true);
   checkProductsContain(keyword);
 });
