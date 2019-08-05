@@ -38,7 +38,21 @@ class Home {
    *
    * @param {String} option - Name of the menu option to click
    */
-  selectMenuOption(option) {}
+  selectMenuOption(option) {
+    switch (option) {
+      case "Women":
+        this.womenMenuOption.click();
+        break;
+      case "Dresses":
+        this.dressesMenuOption.click();
+        break;
+      case "T-Shirts":
+        this.tshirtMenuOption.click();
+        break;
+      default:
+        console.log(`Invalid Option ${option}`);
+    }
+  }
 }
 
 module.exports = new Home();
