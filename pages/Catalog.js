@@ -4,9 +4,7 @@ class Catalog {
   }
 
   get products() {
-    return $$(
-      "#search .product_list .product-container .product-image-container"
-    );
+    return $$("#search .product_list .product-container .product-name");
   }
 }
 
