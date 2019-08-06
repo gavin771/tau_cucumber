@@ -5,7 +5,7 @@ Feature: Menu Navigation
 
   Scenario Outline: Navigating through the main menu options from the home page
     Given the browser is at the "Home" page
-    When the user clicks on the "<menuOption>" option in the menu
+    When the user clicks on the "<menuOption>" menu option in the menu
     Then the title of the page should be "<pageTitle>"
 
     Examples:
