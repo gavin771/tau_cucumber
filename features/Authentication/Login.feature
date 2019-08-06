@@ -1,7 +1,7 @@
 Feature: Login
 
   As a user, I want to be able to login to my account to
-  view accont details
+  view account details
 
   Scenario Outline: Attempting to login with valid credentials; <@email>
     Given the browser is at the "Login" page
