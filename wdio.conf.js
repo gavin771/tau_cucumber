@@ -1,4 +1,11 @@
 require("dotenv").config();
+const {
+  Eyes,
+  Target,
+  ClassicRunner,
+  Configuration,
+  BatchInfo
+} = require("@applitools/eyes-webdriverio");
 
 exports.config = {
   //
@@ -170,6 +177,18 @@ exports.config = {
    */
   beforeSession: function(config, capabilities, specs) {
     require("@babel/register");
+
+    const eyes = new Eyes(new ClassicRunner());
+    global.eyes = eyes;
+    global.Target = Target;
+    const batchInfo = new BatchInfo();
+    batchInfo.setSequenceName("Cucumber Tests");
+    const configuration = new Configuration();
+    configuration.setBatch(batchInfo);
+    configuration.setAppName("Automation Practice");
+    configuration.setTestName("AppliTools Sample: Login");
+    configuration.setApiKey(process.env.APPLITOOLS_KEY);
+    eyes.setConfiguration(configuration);
   }
   /**
    * Gets executed before test execution begins. At this point you can access to all global

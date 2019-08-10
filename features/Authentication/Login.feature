@@ -5,7 +5,9 @@ Feature: Login
 
   Scenario Outline: Attempting to login with valid credentials; <@email>
     Given the browser is at the "Login" page
-    When the user tries to use "valid" credentials, "<email>" to login
+    When a visual checkpoint is created for "Login Page"
+    And the user tries to use "valid" credentials, "<email>" to login
+    And a visual checkpoint is created for "Account Page"
     Then the title of the page should be "My account - My Store"
 
     @dev
