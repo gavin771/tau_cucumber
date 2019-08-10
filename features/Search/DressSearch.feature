@@ -1,3 +1,4 @@
+@regression
 Feature: Dress Search
 
   As a user, I want to be able to search for dresses by type so I
