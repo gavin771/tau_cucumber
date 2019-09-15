@@ -5,9 +5,9 @@ Feature: Login
 
   Scenario Outline: Attempting to login with valid credentials; <@email>
     Given the browser is at the "Login" page
-    When a visual checkpoint is created for "Login Page"
+    When I use Applitools on the "Login Page"
     And the user tries to use "valid" credentials, "<email>" to login
-    And a visual checkpoint is created for "Account Page"
+    And I use Applitools on the "Account Page"
     Then the title of the page should be "My account - My Store"
 
     @dev
