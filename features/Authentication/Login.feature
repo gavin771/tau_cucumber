@@ -5,10 +5,9 @@ Feature: Login
 
   Scenario Outline: Attempting to login with valid credentials; <@email>
     Given the browser is at the "Login" page
-    When I use Applitools on the "Login Page"
-    And the user tries to use "valid" credentials, "<email>" to login
-    And I use Applitools on the "Account Page"
-    Then the title of the page should be "My account - My Store"
+    When the user tries to use "valid" credentials, "<email>" to login
+    Then they are successfully logged in 
+    And the title of the page should be "My account - My Store"
 
     @dev
     Examples:
