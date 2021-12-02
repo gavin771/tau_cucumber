@@ -10,10 +10,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.0",
-    "@babel/polyfill": "^7.4.4",
-    "@babel/preset-env": "^7.5.0",
-    "@babel/register": "^7.4.4"
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/polyfill": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/register": "latest",
+    "@wdio/cucumber-framework": "latest",
+    "@wdio/local-runner": "latest",
+    "@wdio/spec-reporter": "latest",
+    "chromedriver": "latest",
+    "wdio-chromedriver-service": "latest"
+  },
+  "dependencies": {
+    "@wdio/cli": "latest",
+    "webdriverio": "latest"
   }
 }
