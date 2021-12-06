@@ -21,7 +21,8 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './features/**/*.feature'
+        './features/Google searching/*.feature',
+        //'./features/heroku-app/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -139,7 +140,10 @@ exports.config = {
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
-        require: ['./features/step-definitions/steps.js'],
+        require: [
+            './features/heroku-app/step-definitions/steps.js',
+            './features/Google searching/step-definitions/steps.js'
+        ],
         // <boolean> show full backtrace for errors
         backtrace: false,
         // <string[]> ("extension:module") require files with the given EXTENSION after requiring MODULE (repeatable)
@@ -200,9 +204,9 @@ exports.config = {
      * @param {Array.<String>} specs List of spec file paths that are to be run
      * @param {String} cid worker id (e.g. 0-0)
      */
-    beforeSession: function (config, capabilities, specs, cid) {
-        require("@babel/register");
-    },
+    // beforeSession: function (config, capabilities, specs, cid) {
+    //    require("@babel/register");
+    // },
     /**
      * Gets executed before test execution begins. At this point you can access to all global
      * variables like `browser`. It is the perfect place to define custom commands.
