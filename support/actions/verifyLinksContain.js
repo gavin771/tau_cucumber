@@ -14,13 +14,13 @@ export default async (links, keyword) => {
         console.log("link: " + await str);
 
         if (str) {
-            console.log(i + " true");
+            console.log("     " + i + " true");
             assert(
                 await str.includes(keyword),
                 `Link text does not include ${keyword}`
             );
         } else {
-            console.log(i + " false");
+            console.log("     " + i + " false");
         }
     };    
 }
