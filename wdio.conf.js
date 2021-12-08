@@ -22,7 +22,7 @@ exports.config = {
     //
     specs: [
         //'./heroku-app/*.feature',
-        //'./Google searching/features/**/*.feature',
+        //'./google-searching/features/**/*.feature',
         './automationpractice/features/**/*.feature'
     ],
     // Patterns to exclude.
@@ -143,7 +143,7 @@ exports.config = {
         // <string[]> (file/dir) require files before executing features
         require: [
             //'./heroku-app/step-definitions/steps.js',
-            //'./Google searching/step-definitions/steps.js',
+            //'./google-searching/step-definitions/steps.js',
             './automationpractice/step-definitions/steps.js'
         ],
         // <boolean> show full backtrace for errors
