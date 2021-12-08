@@ -144,7 +144,9 @@ exports.config = {
         require: [
             //'./heroku-app/step-definitions/steps.js',
             //'./google-searching/step-definitions/steps.js',
-            './automationpractice/step-definitions/steps.js'
+            './automationpractice/step-definitions/**/given.js',
+            './automationpractice/step-definitions/**/when.js',
+            './automationpractice/step-definitions/**/then.js'
         ],
         // <boolean> show full backtrace for errors
         backtrace: false,
