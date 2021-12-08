@@ -21,8 +21,9 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './features/Google searching/*.feature',
-        //'./features/heroku-app/*.feature'
+        //'./heroku-app/*.feature',
+        //'./Google searching/features/**/*.feature',
+        './automationpractice/features/**/*.feature'
     ],
     // Patterns to exclude.
     exclude: [
@@ -95,7 +96,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://google.com',
+    baseUrl: '',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -141,8 +142,9 @@ exports.config = {
     cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
         require: [
-            './features/heroku-app/step-definitions/steps.js',
-            './features/Google searching/step-definitions/steps.js'
+            //'./heroku-app/step-definitions/steps.js',
+            //'./Google searching/step-definitions/steps.js',
+            './automationpractice/step-definitions/steps.js'
         ],
         // <boolean> show full backtrace for errors
         backtrace: false,

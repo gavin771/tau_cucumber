@@ -1,6 +1,6 @@
 class Home {
     get url() {
-        return "/";
+        return "https://google.com";
     }
 
     get ggl_agree() {
