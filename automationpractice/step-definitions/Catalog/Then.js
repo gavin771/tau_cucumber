@@ -1,10 +1,10 @@
-const { Then } = require("@wdio/cucumber-framework");
-const { default: checkProducts } = require("../../support/assertions/checkProducts");
+import { Then } from "@wdio/cucumber-framework";
+import { default as checkProducts } from "../../support/assertions/checkProducts";
 
 Then(/^(no )?products are listed$/, async (notListed) => {
     if(notListed) {
-        checkProducts(false);
+        await checkProducts(false);
     } else {
-        checkProducts(true);
+        await checkProducts(true);
     }
 });

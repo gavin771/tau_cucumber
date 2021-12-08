@@ -2,14 +2,14 @@ import catalog from "../../pom/Catalog";
 import assert from "assert";
 
 /**
- * @param {boolean} toBeFound If true, products should be
+ * @param {boolean} toBeFound If true, products should be present, else - they should not
  */
-export default toBeFound => {
-    const products = catalog.products;
+export default async (toBeFound) => {
+    const products = await catalog.products;
 
     if (toBeFound) {
-        assert(products.length > 0, "No products were found");
+        assert(await products.length > 0, "No products were found");
     } else {
-        assert(products.length === 0, "Products were found");
+        assert(await products.length === 0, "Products were found");
     }
 }

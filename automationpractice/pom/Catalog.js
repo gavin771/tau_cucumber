@@ -1,6 +1,3 @@
-const { default: $ } = require("webdriverio/build/commands/browser/$");
-const { default: $$ } = require("webdriverio/build/commands/browser/$$");
-
 class Catalog {
     get noResultsErrorMessage() {
         return $(".alert.alert-warning");
